@@ -1,0 +1,54 @@
+:root {
+    --background-color: rgb(173, 173, 173);
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border: 1px solid red;
+}
+
+html {
+    background-color: var(--background-color);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 7rem 1fr;
+    grid-template-columns: 10rem 1fr;
+}
+
+.main-content {
+    grid-row: 2/ end;
+    grid-column: 2 / end;
+    display: grid;
+    grid-template-columns: 35% 35% 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.projects-section {
+    grid-row: 1 / end;
+    grid-column: 1 / 3;
+}
+
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.project-item {
+    
+}
+
+.announcements-section {
+    grid-row: 1/2;
+}
+
+.newsfeed-section {
+   grid-row: 2/end;
+}
+
+
